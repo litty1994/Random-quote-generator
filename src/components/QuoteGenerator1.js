@@ -20,12 +20,15 @@ const QuoteGenerator1 = () => {
     }
   };
 
-  // Fetch a quote when component mounts
+
   useEffect(() => {
     fetchQuote();
   }, []);
 
   return (
+    <>
+  <div class="col-12 col-md-6 col-lg-4 bg-primary text-white p-3"></div>
+    <div class="col-12 col-md-6 col-lg-4 bg-secondary text-white p-3">
     <div style={{ textAlign: 'center', marginTop: '50px', width: '100%', height: '500px', backgroundColor: 'aquamarine' }}>
       <h1 style={{ fontSize:'40px',color:'blue' }}>Quote of the day</h1>
       <div  style={{ width: '98%', height: '200px', backgroundColor: 'white',marginLeft:'10px',marginRight:'20px', display:'flex',alignItems:'center',justifyContent:'center'}}>
@@ -40,7 +43,13 @@ const QuoteGenerator1 = () => {
           
       <button onClick={fetchQuote}>Next Quote</button>
     </div>
+    </div>
+    <div class="col-12 col-lg-4 bg-success text-white p-3"></div>
+
+    
+    </>
   );
-};
+}
+
 
 export default QuoteGenerator1;
