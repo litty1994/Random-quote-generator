@@ -39,9 +39,9 @@ const QuoteGenerator1 = () => {
             <p><br/><br/><strong>- {quote.author}</strong></p>
 
           </div>
+          <br/>
           
-          
-      <button onClick={fetchQuote}>Next Quote</button>
+      <button  onClick={fetchQuote}>Next Quote</button>
     </div>
    
     </div>
